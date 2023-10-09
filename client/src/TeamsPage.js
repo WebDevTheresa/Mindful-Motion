@@ -21,7 +21,11 @@ const TeamsPage = () => {
 
           <H3>Sarah Thompson</H3> <Intro>Lead Instructor | Founder | </Intro>{' '}
 
+
+          <H3>Sarah Thompson</H3> <Intro>Lead Instructor | Founder | </Intro>{' '}
+
           <H3>Sarah Thompson</H3> <Intro>Lead Instructor | Founder| </Intro>{' '}
+
 
           Meet Sarah Thompson, the dedicated founder and lead Pilates instructor
           at Mindful Motion, a sanctuary she envisioned and brought to life with
@@ -202,11 +206,19 @@ const LeadImg = styled.img`
   @media only screen and (min-width: 768px) {
     max-width: 100%;
 
+
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  @media only screen and (min-width: 768px) {
+    max-width: 100%;
+
   height: 30em;
   width: 100%;
   max-width: 100%;
   @media only screen and (min-width: 768px) {
     max-width: 50%;
+
 
   }
 `;
@@ -219,7 +231,11 @@ const Img = styled.img`
 
     max-width: 100%;
 =======
+
+    max-width: 100%;
+=======
     max-width: 50%;
+
 
   }
 `;
@@ -230,9 +246,9 @@ const Intro = styled.p`
 `;
 const Description = styled.div`
 
-=======
   // margin: 40px;
   width: 22em;
+
 
   line-height: 1.7em;
   font-family: 'Roboto', sans-serif;
