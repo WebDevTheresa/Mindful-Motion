@@ -211,13 +211,17 @@ const LeadImg = styled.img`
   width: 100%;
   max-width: 100%;
   @media only screen and (min-width: 768px) {
-    max-width: 100%;
+
+    max-width: 50%;
+
+   
 
   height: 30em;
   width: 100%;
   max-width: 100%;
   @media only screen and (min-width: 768px) {
     max-width: 50%;
+
 
 
   }
