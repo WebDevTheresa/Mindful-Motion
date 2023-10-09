@@ -1,55 +1,43 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import Dropdown from './Dropdown';
+import logo from './pictures/logo.png';
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
-
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    setShowDropdown(false);
-  };
-
   return (
     <div>
       <Wrapper>
+        <img src={logo} alt="logo" style={{ width: '4em', height: '4em' }} />
         <Button>Team</Button>
-        <Button onClick={() => setShowDropdown(!showDropdown)}>
-          Class {selectedOption ? `(${selectedOption})` : ''}
-          {showDropdown && (
-            <Dropdown>
-              <Option onClick={() => handleOptionClick('Option 1')}>
-                Fitness Classes
-              </Option>
-              <Option onClick={() => handleOptionClick('Option 2')}>
-                Reformer Pilates
-              </Option>
-            </Dropdown>
-          )}
-        </Button>
-        <Button>Rates </Button> <Button>Schedule</Button>
-        <Button>Contact</Button> <IntroButton>Intro Offer </IntroButton>
+        <Dropdown />
+
+        <Button>Rates </Button>
+        <Button>Schedule</Button>
+        <Button>Contact</Button>
+        <IntroButton>Intro Offer </IntroButton>
       </Wrapper>
     </div>
   );
 };
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
 `;
 
 const Button = styled.button`
+  font-family: IBM Plex Sans, sans-serif;
   background: none;
   justify-content: space-between;
   align-items: center;
   border: none;
   transition-timing-function: ease-in;
   transition: width 0.8s;
-  height: 30px;
+  height: 64px;
   width: 80px;
-  padding: 10px;
+  padding: 8px 14px;
+  font-size: 19px;
   position: relative;
   &:hover {
     width: 100px;
@@ -58,26 +46,11 @@ const Button = styled.button`
   }
 `;
 
-const Dropdown = styled.div`
-  position: absolute;
-  top: 100%;
-  left: 0;
-  border: 1px solid black;
-  border-radius: 12px;
-  background-color: white;
-  padding: 5px;
-`;
-
 const IntroButton = styled.button`
   background: black;
   color: white;
+  border-style: none;
+  font-size: 19px;
 `;
 
-const Option = styled.div`
-  cursor: pointer;
-  padding: 5px;
-  &:hover {
-    background-color: lightgray;
-  }
-`;
 export default Navbar;
