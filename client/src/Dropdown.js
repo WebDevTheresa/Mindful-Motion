@@ -5,7 +5,6 @@ import { MenuButton } from '@mui/base/MenuButton';
 import { MenuItem, menuItemClasses } from '@mui/base/MenuItem';
 import { styled } from '@mui/system';
 import { Link } from 'react-router-dom';
-=======
 
 
 export default function MenuIntroduction() {
@@ -21,22 +20,27 @@ export default function MenuIntroduction() {
       <Menu slots={{ listbox: StyledListbox }}>
         <StyledMenuItem onClick={createHandleMenuClick('Profile')}>
 
-          <Link to="/Fitnessclass">Fitness Classes</Link>
+          <LINK to="/Fitnessclass">Fitness Classes</LINK>
+
+
+         
 
           Fitness Classes
+
 
         </StyledMenuItem>
         <StyledMenuItem onClick={createHandleMenuClick('Language settings')}>
           Reformer Classes
         </StyledMenuItem>
+
+
 <
         {/* <StyledMenuItem onClick={createHandleMenuClick('Log out')}>
           Pilates
         </StyledMenuItem> */}
 
-        <StyledMenuItem onClick={createHandleMenuClick('Log out')}>
-          Pilates
-        </StyledMenuItem>
+        
+
 
       </Menu>
     </Dropdown>
@@ -143,3 +147,8 @@ const TriggerButton = styled(MenuButton)(
   }
   `
 );
+
+const LINK = styled(Link)`
+  text-decoration: none;
+  color: #000;
+`;
