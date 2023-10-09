@@ -195,7 +195,7 @@ const LeadImg = styled.img`
   width: 100%;
   max-width: 100%;
   @media only screen and (min-width: 768px) {
-    max-width: 100%;
+    max-width: 50%;
   }
 `;
 const Img = styled.img`
