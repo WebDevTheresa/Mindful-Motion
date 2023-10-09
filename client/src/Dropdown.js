@@ -4,6 +4,9 @@ import { Menu } from '@mui/base/Menu';
 import { MenuButton } from '@mui/base/MenuButton';
 import { MenuItem, menuItemClasses } from '@mui/base/MenuItem';
 import { styled } from '@mui/system';
+import { Link } from 'react-router-dom';
+=======
+
 
 export default function MenuIntroduction() {
   const createHandleMenuClick = (menuItem) => {
@@ -17,14 +20,24 @@ export default function MenuIntroduction() {
       <TriggerButton>Classes▾</TriggerButton>
       <Menu slots={{ listbox: StyledListbox }}>
         <StyledMenuItem onClick={createHandleMenuClick('Profile')}>
+
+          <Link to="/Fitnessclass">Fitness Classes</Link>
+
           Fitness Classes
+
         </StyledMenuItem>
         <StyledMenuItem onClick={createHandleMenuClick('Language settings')}>
           Reformer Classes
         </StyledMenuItem>
+<
+        {/* <StyledMenuItem onClick={createHandleMenuClick('Log out')}>
+          Pilates
+        </StyledMenuItem> */}
+
         <StyledMenuItem onClick={createHandleMenuClick('Log out')}>
           Pilates
         </StyledMenuItem>
+
       </Menu>
     </Dropdown>
   );
