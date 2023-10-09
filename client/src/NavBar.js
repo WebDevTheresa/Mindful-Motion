@@ -2,13 +2,17 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import Dropdown from './Dropdown';
 import logo from './pictures/logo.png';
-
+import Fitnessclass from './Fitnessclass';
+import TeamsPage from './TeamsPage';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
       <Wrapper>
         <img src={logo} alt="logo" style={{ width: '4em', height: '4em' }} />
-        <Button>Team</Button>
+        <LINK to="/TeamsPage">
+          <Button>Team</Button>
+        </LINK>
         <Dropdown />
 
         <Button>Rates </Button>
@@ -51,6 +55,11 @@ const IntroButton = styled.button`
   color: white;
   border-style: none;
   font-size: 19px;
+`;
+
+const LINK = styled(Link)`
+  text-decoration: none;
+  color: #000;
 `;
 
 export default Navbar;

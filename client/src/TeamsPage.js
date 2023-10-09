@@ -13,20 +13,12 @@ const TeamsPage = () => {
   return (
     <>
       <Navbar />
-      <Header>Team</Header>{' '}
+      <Header>Our Team</Header>{' '}
       <Wrapper>
         {/* <Biodiv> */}
         <LeadImg src={instructor6} alt="fitness instructor" />
         <LeadDescription>
-
           <H3>Sarah Thompson</H3> <Intro>Lead Instructor | Founder | </Intro>{' '}
-
-
-          <H3>Sarah Thompson</H3> <Intro>Lead Instructor | Founder | </Intro>{' '}
-
-          <H3>Sarah Thompson</H3> <Intro>Lead Instructor | Founder| </Intro>{' '}
-
-
           Meet Sarah Thompson, the dedicated founder and lead Pilates instructor
           at Mindful Motion, a sanctuary she envisioned and brought to life with
           her passion for holistic well-being. With over 15 years of experience
@@ -87,14 +79,13 @@ const TeamsPage = () => {
       <Wrapper>
         <Biodiv>
           <Img src={instructor1} alt="fitness instructor" />
-          <H3>David Lee</H3> <Intro>Martial Arts Instuctor</Intro>{' '}
+          <H3>David Lee</H3> <Intro>Boxing Instuctor</Intro>{' '}
           <Description>
-            David Lee is a martial arts instructor with over 10 years of
-            experience. He has a black belt in Taekwondo and has trained in
-            other martial arts, including Muay Thai and Brazilian Jiu-Jitsu.
-            David's classes focus on technique, discipline, and self-defense,
-            and he encourages his students to develop their physical and mental
-            strength.
+            David Lee is a boxing instructor with over 10 years of experience.
+            He has a black belt in Taekwondo and has trained in other martial
+            arts, including Muay Thai and Brazilian Jiu-Jitsu. David's classes
+            focus on technique, discipline, and self-defense, and he encourages
+            his students to develop their physical and mental strength.
           </Description>{' '}
         </Biodiv>
 
@@ -199,31 +190,14 @@ const Biodiv = styled.div`
 `;
 
 const LeadImg = styled.img`
-
-  height: auto;
-  width: 100%;
-  max-width: 100%;
+  height: 40em;
+  // height: auto;
+  // width: 100%;
+  // max-width: 100%;
   @media only screen and (min-width: 768px) {
-    max-width: 100%;
-
-
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-  @media only screen and (min-width: 768px) {
-
-    max-width: 50%;
-
-   
-
-  height: 30em;
-  width: 100%;
-  max-width: 100%;
-  @media only screen and (min-width: 768px) {
-    max-width: 50%;
-
-
-
+    body {
+      max-width: 50%;
+    }
   }
 `;
 const Img = styled.img`
@@ -232,15 +206,8 @@ const Img = styled.img`
   max-width: 100%;
 
   @media only screen and (min-width: 768px) {
-
     max-width: 100%;
-=======
-
-    max-width: 100%;
-=======
     max-width: 50%;
-
-
   }
 `;
 
@@ -249,11 +216,7 @@ const Intro = styled.p`
   font-family: 'Ubuntu', sans-serif;
 `;
 const Description = styled.div`
-
-  // margin: 40px;
   width: 22em;
-
-
   line-height: 1.7em;
   font-family: 'Roboto', sans-serif;
   font-family: 'Ubuntu', sans-serif;
