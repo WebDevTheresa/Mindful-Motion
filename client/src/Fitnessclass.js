@@ -1,31 +1,38 @@
-import './styles.css';
 import styled from 'styled-components';
+import Navbar from './NavBar';
+import barre from './pictures/barre.jpg';
+import boxing from './pictures/boxing.jpg';
+import advancestretch from './pictures/advancestretch.jpg';
+import pilates from './pictures/pilates.jpg';
+import stretching from './pictures/stretching.jpg';
+import yoga from './pictures/yoga.jpg';
 
 const Fitnessclass = () => {
   return (
     <div>
-      <Header>Fitness Class</Header>
+      <Navbar />
+      <Header>Fitness Classes</Header>
       <Bodywrapper>
         <Wrapper>
-          {/* <Imgdiv>img</Imgdiv> */}
-          <Infodiv>
-            <div>
-              <h2> Advanced Pilates</h2>
-            </div>
+          <Imgdiv src={advancestretch} alt="fitness" />
+          <Infodivodd>
+            <h2> Advanced Pilates</h2>
             <h3> 45 Minutes</h3>
-            <p>
+            <div>
+              {/* <p> */}
               Our Pilates class is an abdominal and back-strengthening class
               that emphasizes strengthening of all the muscles, even the full
               body. Its roots are in dance, therapy, and yoga. Participants will
               see an improvement in themselves and their bodies including more
               flexibility, more strength, better posture, a decrease in neck and
               back pain, and a less stressed feeling.
-            </p>
-          </Infodiv>
+              {/* </p> */}
+            </div>
+          </Infodivodd>
         </Wrapper>
         <Wrapper>
-          {/* <Imgdiv>img</Imgdiv> */}
-          <Infodiv>
+          <Imgdiv src={boxing} alt="fitness" />
+          <Infodiveven>
             <h2>Boxing</h2> <h3> 60 Minutes</h3>
             <p>
               Our boxing class is a high-impact workout that sculpts by fusing
@@ -33,11 +40,11 @@ const Fitnessclass = () => {
               class is designed to improve strength, endurance, and agility
               while also providing a fun and challenging workout.
             </p>
-          </Infodiv>
+          </Infodiveven>
         </Wrapper>
         <Wrapper>
-          {/* <Imgdiv>img</Imgdiv> */}
-          <Infodiv>
+          <Imgdiv src={yoga} alt="fitness" />
+          <Infodivodd>
             <h2>Yoga</h2> <h3>45 Minutes</h3>{' '}
             <p>
               Our yoga class is a mind/body exercise program that will deliver a
@@ -47,11 +54,11 @@ const Fitnessclass = () => {
               clarity.
             </p>
             <p>*Please bring your yoga mat for this class</p>
-          </Infodiv>
+          </Infodivodd>
         </Wrapper>
         <Wrapper>
-          {/* <Imgdiv>img</Imgdiv> */}
-          <Infodiv>
+          <Imgdiv src={stretching} atl="fitness" />
+          <Infodiveven>
             <h2>Advance stretching</h2> <h3>40 Minutes</h3>
             <p>
               Our stretching class is designed to improve flexibility and
@@ -59,11 +66,11 @@ const Fitnessclass = () => {
               static stretching, dynamic stretching, and foam rolling, to help
               our clients achieve their goals.
             </p>
-          </Infodiv>
+          </Infodiveven>
         </Wrapper>
         <Wrapper>
-          {/* <Imgdiv>img</Imgdiv> */}
-          <Infodiv>
+          <Imgdiv src={barre} alt="fitness" />
+          <Infodivodd>
             <h2>Barre Pilates</h2> <h3>45 minutes</h3>
             <p>
               Our Barre Pilates class combines the principles of Pilates with
@@ -71,11 +78,11 @@ const Fitnessclass = () => {
               toning, sculpting, and strengthening the body, while also
               improving posture and balance.
             </p>
-          </Infodiv>
+          </Infodivodd>
         </Wrapper>
         <Wrapper>
-          {/* <Imgdiv>img</Imgdiv> */}
-          <Infodiv>
+          <Imgdiv src={pilates} alt="fitness" />
+          <Infodiveven>
             <h2>Beginner Pilates</h2> <h3>40 Minutes</h3>
             <p>
               This class is designed for individuals who are new to Pilates or
@@ -83,7 +90,7 @@ const Fitnessclass = () => {
               will learn proper breathing techniques, alignment, and form while
               performing exercises that target the core, arms, legs, and back.
             </p>
-          </Infodiv>
+          </Infodiveven>
         </Wrapper>
       </Bodywrapper>
     </div>
@@ -108,11 +115,30 @@ const Imgdiv = styled.img`; // height:400px; // width:350px; // `
 const Wrapper = styled.div`
   margin: 50px;
 `;
-const Infodiv = styled.div`
+const Infodivodd = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 500px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+`;
+
+const Infodiveven = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 500px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+`;
+
+const Imgdiv = styled.img`
+  height: 25em;
+
+  //   width: 100%;
+  //   height: auto;
+  //   max-width: 100%;
 `;
 
 export default Fitnessclass;
