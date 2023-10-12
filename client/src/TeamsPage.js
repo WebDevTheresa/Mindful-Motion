@@ -11,7 +11,7 @@ import instructor6 from './pictures/instructor6.jpg';
 
 const TeamsPage = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <Header>Our Team</Header>{' '}
       <Wrapper>
@@ -75,8 +75,7 @@ const TeamsPage = () => {
             her clients move better and feel better in their bodies.
           </Description>{' '}
         </Biodiv>
-      </Wrapper>
-      <Wrapper>
+        {/* <Wrapper> */}
         <Biodiv>
           <Img src={instructor1} alt="fitness instructor" />
           <H3>David Lee</H3> <Intro>Boxing Instuctor</Intro>{' '}
@@ -88,7 +87,8 @@ const TeamsPage = () => {
             his students to develop their physical and mental strength.
           </Description>{' '}
         </Biodiv>
-
+      </Wrapper>
+      <Wrapper>
         <Biodiv>
           <Img src={instructor3} alt="fitness instructor" />
           <H3>Emily Davis</H3> <Intro>Barre Pilates Instructor</Intro>{' '}
@@ -101,8 +101,7 @@ const TeamsPage = () => {
             while also improving posture and balance.
           </Description>{' '}
         </Biodiv>
-      </Wrapper>
-      <Wrapper>
+        {/* </Wrapper> */}
         <Biodiv>
           <Img src={logo} alt="fitness instructor" />
           <H3>Misha Beltes</H3>{' '}
@@ -131,7 +130,7 @@ const TeamsPage = () => {
           </Description>{' '}
         </Biodiv>
       </Wrapper>
-    </>
+    </div>
   );
 };
 
@@ -170,22 +169,18 @@ const Wrapper = styled.div`
   margin: 25px 10px;
 
   @media only screen and (max-width: 768px) {
-    body {
-      // padding: 40px 40px;
-      width: 50%;
-    }
+    flex-direction: column;
+    // padding: 40px 40px;
+    width: 100%;
   }
 `;
 
 const Biodiv = styled.div`
   padding: 10px 40px;
-  width: 900px;
+  width: 33%;
 
-  @media only screen and (min-width: 768px) {
-    body {
-      padding: 20px 40px;
-      width: 50%;
-    }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -194,20 +189,19 @@ const LeadImg = styled.img`
   // height: auto;
   // width: 100%;
   // max-width: 100%;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
     body {
-      max-width: 50%;
+      max-width: 100%;
     }
   }
 `;
 const Img = styled.img`
   width: 100%;
-  height: auto;
+  height: 66%;
   max-width: 100%;
-
   @media only screen and (min-width: 768px) {
     max-width: 100%;
-    max-width: 50%;
+    height: 66%;
   }
 `;
 
