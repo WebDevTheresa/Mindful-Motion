@@ -15,7 +15,7 @@ export default function MenuIntroduction() {
 
   return (
     <Dropdown>
-      <TriggerButton>Classes ▾</TriggerButton>
+      <TriggerButton>Classes▾</TriggerButton>
       <Menu slots={{ listbox: StyledListbox }}>
         <StyledMenuItem onClick={createHandleMenuClick('Profile')}>
           <LINK to="/Fitnessclass">Fitness Classes</LINK>
