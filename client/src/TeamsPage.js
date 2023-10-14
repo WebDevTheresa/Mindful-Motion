@@ -2,6 +2,7 @@ import react from 'react';
 import styled from 'styled-components';
 import Navbar from './NavBar';
 import logo from './pictures/logo.png';
+import Footer from './Footer';
 import instructor1 from './pictures/instructor1.jpg';
 import instructor2 from './pictures/instructor2.jpg';
 import instructor3 from './pictures/instructor3.jpg';
@@ -130,6 +131,7 @@ const TeamsPage = () => {
           </Description>{' '}
         </Biodiv>
       </Wrapper>
+      <Footer />
     </div>
   );
 };
