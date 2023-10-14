@@ -6,6 +6,7 @@ import advancestretch from './pictures/advancestretch.jpg';
 import pilates from './pictures/pilates.jpg';
 import stretching from './pictures/stretching.jpg';
 import yoga from './pictures/yoga.jpg';
+import Footer from './Footer';
 
 const Fitnessclass = () => {
   return (
@@ -122,6 +123,7 @@ const Fitnessclass = () => {
           <Img src={pilates} alt="fitness" />
         </Infodiveven>
       </Wrapper>
+      <Footer />
     </div>
   );
 };
