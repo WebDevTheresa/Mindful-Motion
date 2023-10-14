@@ -1,14 +1,24 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useState } from 'react';
 import Dropdown from './Dropdown';
 import logo from './pictures/logo.png';
-import Fitnessclass from './Fitnessclass';
-import TeamsPage from './TeamsPage';
 import { Link } from 'react-router-dom';
+
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div>
-      <Wrapper>
+      <MobileMenuButton onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </MobileMenuButton>
+      <Wrapper isOpen={isOpen}>
         <img src={logo} alt="logo" style={{ width: '4em', height: '4em' }} />
         <LINK to="/TeamsPage">
           <Button>Team</Button>
@@ -23,13 +33,37 @@ const Navbar = () => {
     </div>
   );
 };
+
+const MobileMenuButton = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
-`;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    display: ${(props) => (props.isOpen ? 'flex' : 'none')};
+  }
+`;
 const Button = styled.button`
   font-family: IBM Plex Sans, sans-serif;
   background: none;
@@ -43,10 +77,15 @@ const Button = styled.button`
   padding: 8px 14px;
   font-size: 19px;
   position: relative;
+
   &:hover {
     width: 100px;
     background-color: black;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
   }
 `;
 
@@ -55,6 +94,11 @@ const IntroButton = styled.button`
   color: white;
   border-style: none;
   font-size: 19px;
+  margin-top: 10px;
+  padding: 12px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 `;
 
 const LINK = styled(Link)`
