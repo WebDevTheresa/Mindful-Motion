@@ -24,8 +24,9 @@ const Navbar = () => {
           <Button>Team</Button>
         </LINK>
         <Dropdown />
-
-        <Button>Rates </Button>
+        <LINK to="/Rates">
+          <Button>Rates </Button>
+        </LINK>
         <Button>Schedule</Button>
         <Button>Contact</Button>
         <IntroButton>Intro Offer </IntroButton>
