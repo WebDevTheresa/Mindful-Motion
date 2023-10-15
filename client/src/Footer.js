@@ -16,11 +16,11 @@ const Footer = () => {
         <ClassWrapper>
           <h2>Classes</h2>
           <p>Advanced Pilates</p>
-          <p>Boxing</p>
-          <p>Yoga</p>
           <p>Advanced Stretching</p>
           <p>Barre Pilates</p>
           <p>Beginner Pilates</p>
+          <p>Boxing</p>
+          <p>Yoga</p>
         </ClassWrapper>
         <ContactWrapper>
           <h2>General</h2>
