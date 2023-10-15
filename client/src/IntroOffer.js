@@ -36,7 +36,7 @@ const OfferWrapper = styled.div`
 const Offer = styled.p`
   color: #705c2d;
   position: relative;
-  top: 292px;
+  top: 160px;
   font-size: 36px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -44,7 +44,7 @@ const Offer = styled.p`
 
   @media and screen and (max-width: 768px) {
     width: 100%;
-    height: auto;
+    heigh: auto;
   }
 `;
 
