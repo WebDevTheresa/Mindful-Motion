@@ -7,6 +7,7 @@ import pilates from './pictures/pilates.jpg';
 import stretching from './pictures/stretching.jpg';
 import yoga from './pictures/yoga.jpg';
 import Footer from './Footer';
+import IntroOffer from './IntroOffer';
 
 const Fitnessclass = () => {
   return (
@@ -123,6 +124,7 @@ const Fitnessclass = () => {
           <Img src={pilates} alt="fitness" />
         </Infodiveven>
       </Wrapper>
+      <IntroOffer />
       <Footer />
     </div>
   );
@@ -140,9 +142,11 @@ const Header = styled.div`
   align-items: flex-end;
 
   @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    padding: 40px 40px;
+    // flex-direction: column;
+    // padding: 40px 40px;
+    height: 72px;
     width: 100%;
+    display: block;
   }
 `;
 
@@ -155,6 +159,10 @@ const H2 = styled.h2`
   font-size: 45px;
   font-family: 'Roboto', sans-serif;
   font-family: 'Ubuntu', sans-serif;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 const Title = styled.div`
   display: flex;
@@ -170,8 +178,10 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    // padding: 40px 40px;
+    padding: 40px 40px;
     width: 100%;
+
+    margin: 20px;
   }
 `;
 const Infodivodd = styled.div`
@@ -186,8 +196,9 @@ const Infodivodd = styled.div`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    // padding: 40px 40px;
+    padding: 40px 40px;
     width: 100%;
+    margin: 20px;
   }
 `;
 
@@ -203,8 +214,9 @@ const Infodiveven = styled.div`
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    // padding: 40px 40px;
+    padding: 40px 40px;
     width: 100%;
+    margin: 20px;
   }
 `;
 
