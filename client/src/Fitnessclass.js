@@ -21,7 +21,7 @@ const Fitnessclass = () => {
           <Title>
             <Title>
               <H2> Advanced Pilates</H2>
-              <h3> 45 Minutes</h3>
+              <H3> 45 Minutes</H3>
             </Title>
             Our Pilates class is an abdominal and back-strengthening class that
             emphasizes strengthening of all the muscles, even the full body. Its
@@ -40,7 +40,7 @@ const Fitnessclass = () => {
         <Infodiveven>
           <Title>
             <Title>
-              <H2>Boxing</H2> <h3> 60 Minutes</h3>
+              <H2>Boxing</H2> <H3> 60 Mins</H3>
             </Title>
             Our boxing class is a high-impact workout that sculpts by fusing
             authentic martial arts, boxing, and cardiovascular training. This
@@ -58,7 +58,7 @@ const Fitnessclass = () => {
         <Infodivodd>
           <Title>
             <Title>
-              <H2>Yoga</H2> <h3>45 Minutes</h3>{' '}
+              <H2>Yoga</H2> <H3>45 Mins</H3>{' '}
             </Title>
             Our yoga class is a mind/body exercise program that will deliver a
             full-body workout with an emphasis on yoga poses and core
@@ -75,7 +75,7 @@ const Fitnessclass = () => {
         <Infodiveven>
           <Title>
             <Title>
-              <H2>Advance stretching</H2> <h3>40 Minutes</h3>
+              <H2>Advance stretching</H2> <H3>40 Mins</H3>
             </Title>
             Our stretching class is designed to improve flexibility and
             mobility. We use a variety of stretching techniques, including
@@ -94,7 +94,7 @@ const Fitnessclass = () => {
         <Infodivodd>
           <Title>
             <Title>
-              <H2>Barre Pilates</H2> <h3>45 minutes</h3>
+              <H2>Barre Pilates</H2> <H3>45 Mins</H3>
             </Title>
             Our Barre Pilates class combines the principles of Pilates with
             ballet-inspired movements. This class is low impact and focuses on
@@ -110,7 +110,7 @@ const Fitnessclass = () => {
         <Infodiveven>
           <Title>
             <Title>
-              <H2>Beginner Pilates</H2> <h3>40 Minutes</h3>
+              <H2>Beginner Pilates</H2> <H3>40 Mins</H3>
             </Title>
             This class is designed for individuals who are new to Pilates or who
             want to refresh their knowledge of the basics. Participants will
@@ -230,5 +230,8 @@ const Img = styled.img`
     // height: 66%;
   }
 `;
-
+const H3 = styled.h3`
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+`;
 export default Fitnessclass;
