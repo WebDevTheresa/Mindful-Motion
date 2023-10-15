@@ -9,6 +9,7 @@ import instructor3 from './pictures/instructor3.jpg';
 import instructor4 from './pictures/instructor4.jpg';
 import instructor5 from './pictures/instructor5.jpg';
 import instructor6 from './pictures/instructor6.jpg';
+import IntroOffer from './IntroOffer';
 
 const TeamsPage = () => {
   return (
@@ -131,6 +132,7 @@ const TeamsPage = () => {
           </Description>{' '}
         </Biodiv>
       </Wrapper>
+      <IntroOffer />
       <Footer />
     </div>
   );
@@ -146,6 +148,12 @@ const Header = styled.div`
   font-size: 80px;
   color: white;
   align-items: flex-end;
+
+  @media only screen and (max-width: 768px) {
+    height: 72px;
+    width: 100%;
+    display: block;
+  }
 `;
 
 const LeadDescription = styled.span`
@@ -156,10 +164,8 @@ const LeadDescription = styled.span`
   line-height: 1.4em;
 
   @media only screen and (max-width: 768px) {
-    body {
-      margin: 20px;
-      width: 50%;
-    }
+    // margin: 20px;
+    width: 50%;
   }
 `;
 const Wrapper = styled.div`
