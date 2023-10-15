@@ -21,7 +21,7 @@ export default function MenuIntroduction() {
           <LINK to="/Fitnessclass">Fitness Classes</LINK>
         </StyledMenuItem>
         <StyledMenuItem onClick={createHandleMenuClick('Language settings')}>
-          Reformer Classes
+          <LINK to="/Reformerclass">Reformer Classes</LINK>
         </StyledMenuItem>
       </Menu>
     </Dropdown>
