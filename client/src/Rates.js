@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import Navbar from './NavBar';
 import Footer from './Footer';
 import IntroOffer from './IntroOffer';
+import IntroRate from './IntroRate';
 
 const Rates = () => {
   return (
     <>
       <Navbar />
       <Header>Prices</Header>
+      <IntroRate />
       <IntroOffer />
       <Footer />
     </>
