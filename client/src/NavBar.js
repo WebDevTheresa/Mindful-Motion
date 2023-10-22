@@ -28,7 +28,9 @@ const Navbar = () => {
           <Button>Rates </Button>
         </LINK>
         <Button>Schedule</Button>
-        <Button>Contact</Button>
+        <LINK to="/Contact">
+          <Button>Contact</Button>
+        </LINK>
         <IntroButton>Intro Offer </IntroButton>
       </Wrapper>
     </div>
