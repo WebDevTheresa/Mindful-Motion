@@ -20,6 +20,7 @@ const Footer = () => {
           <p>Barre Pilates</p>
           <p>Beginner Pilates</p>
           <p>Boxing</p>
+          <p>Reformer Pilates</p>
           <p>Yoga</p>
         </ClassWrapper>
         <ContactWrapper>
