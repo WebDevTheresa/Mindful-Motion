@@ -5,6 +5,7 @@ import Fitnessclass from './Fitnessclass';
 import Normalize from 'react-normalize';
 import Reformerclass from './Reformerclass';
 import Rates from './Rates';
+import Contact from './Contact';
 const App = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const App = () => {
           <Route path="/Fitnessclass" element={<Fitnessclass />} />
           <Route path="/Reformerclass" element={<Reformerclass />} />
           <Route path="/Rates" element={<Rates />} />
-          {/* <Route path="/schedule" element={contact}/>   */}
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
     </>
